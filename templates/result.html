@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result page</title>
+</head>
+<body>
+<h1>Here is the result page</h1>
+
+	<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
+
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+
+			{% endif %}
+		</div>
+<a href="/">Back to Home</a>
+
+
+</body>
+</html>
